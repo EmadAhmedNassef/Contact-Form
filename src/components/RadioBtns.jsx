@@ -1,16 +1,16 @@
 "use client";
 import { Box, Radio, RadioGroup } from "@mantine/core";
-import React, { useState } from "react";
+import React from "react";
 
-export default function RadioBtns() {
-  const [value, setValue] = useState("General");
+export default function RadioBtns({ value, onChange, error }) {
   return (
     <RadioGroup
       label="Query Type"
       withAsterisk
       mb={10}
       value={value}
-      onChange={setValue}
+      onChange={onChange}
+      error={error}
     >
       <Box className="flex flex-col sm:flex-row gap-3" mt="xs">
         <Radio
