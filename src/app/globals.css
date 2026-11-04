@@ -1,0 +1,15 @@
+@import "@mantine/core/styles.css";
+@layer tailwind {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --first-color: hsl(148, 38%, 91%);
+  --second-color: hsl(169, 82%, 27%);
+  --third-color: hsl(0, 66%, 54%);
+  --fourth-color: hsl(186, 15%, 59%);
+  --fifth-color: hsl(187, 24%, 22%);
+  --sixth-color: hsl(0, 0%, 100%);
+}
